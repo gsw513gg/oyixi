@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //工厂模式
+    function createObject(name,sex){
+        var obj = new Object();
+        obj.name = name;
+        obj.sex = sex;
+        obj.sayHi = function(){
+            return "hello " + this.name + " 欢迎你回来"
+        }
+        return obj;
+    }
+
+    var arr = [
+        {
+            name:"郭德鹏",
+            age:"23岁",
+        },
+        {
+            name:"马云",
+            age:"23岁",
+        },
+        {
+            name:"王健林",
+            age:"23岁",
+        },
+        {
+            name:"小毛驴",
+            age:"23岁",
+        }
+    ]
+    for(var i=0;i<arr.length; i++){
+        var people = createObject(arr[i].name);
+        // console.log(people.sayHi())
+    }
+    //构造函数
+    function Person(name){
+        this.name = name;
+        this.run = function(){
+            return this.name + "欢迎您回来"
+        }
+    }
+    function Persontwo(name){
+        this.name = name;
+        this.run = function(){
+            return this.name + "欢迎您回来"
+        }
+    }
+    var people = new Person('郭德鹏')
+    var peopletwo = new Persontwo('马云')
+    // console.log(people.run(),peopletwo.run())
+    // console.log(people instanceof Person)//true
+    // console.log(people instanceof Persontwo)//false
+</script>
+</body>
+</html>
