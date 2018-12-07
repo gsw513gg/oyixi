@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layuiAdmin pro - 通用后台管理模板系统</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/common.js"></script>
+</head>
+<body>
+<div class="web">
+    <!--头部导航条-->
+    <div class="header_bar">
+        <div class="header_bar_left fl clear">
+            <ul class="left_wrap clear">
+                <li id="flex_btn"><span class="layui-icon layui-icon-shrink-right"></span></li>
+                <li><span class="layui-icon layui-icon-website"></span></li>
+                <li><span class="layui-icon layui-icon-refresh-3"></span></li>
+                <li><span><input class="search" type="text" placeholder="搜索..."></span></li>
+                <span class="h_bar_line"></span>
+            </ul>
+        </div>
+        <div class="header_bar_right fr">
+            <ul class="right_wrap clear">
+                <li><span class="layui-icon layui-icon-notice"></span></li>
+                <li><span id="hide_theme" class="layui-icon layui-icon-theme"></span></li>
+                <li><span class="layui-icon layui-icon-note"></span></li>
+                <li><span class="layui-icon layui-icon-screen-full"></span></li>
+                <li class="login_enter">
+                    <span>贤心<span class="layui_nav_more layui_admin"></span></span>
+                    <dl class="login_menu">
+                        <dd><a href="javascript:;">基本资料</a></dd>
+                        <dd class="change"><a href="javascript:;">修改密码</a></dd>
+                        <dd class="logout"><a href="javascript:;">退出</a></dd>
+                    </dl>
+                </li>
+                <li><span id="hide_footer" class="layui-icon layui-icon-more-vertical"></span></li>
+                <span class="h_bar_line"></span>
+            </ul>
+        </div>
+    </div>
+    <!--侧边菜单-->
+    <div class="slide_menu">
+        <div class="h_title">
+            <h1>layuiAdmin Pro</h1>
+            <div class="logo_bg"></div>
+        </div>
+        <!--主菜单-->
+        <div class="slide_part">
+            <div class="main_nav">
+                <div class="nav_bar_line"></div>
+                <ul>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-home"></i><span
+                                class="i_txt">主页</span><span class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd><a href="javascript:;">控制台</a></dd>
+                            <dd><a href="javascript:;">主页一</a></dd>
+                            <dd><a href="javascript:;">主页二</a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-component"></i><span
+                                class="i_txt">组件</span><span class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd class="three_menu">
+                                <a class="three_menu_btn" href="javascript:;">栅格<span class="layui_nav_more"></span></a>
+                                <dl class="layui_nav_child layui_nav_child_three">
+                                    <dd><a href="javascript:;">等比例列表排列</a></dd>
+                                    <dd><a href="javascript:;">按移动端排列</a></dd>
+                                    <dd><a href="javascript:;">按移动端排列</a></dd>
+                                    <dd><a href="javascript:;">等比例列表排列</a></dd>
+                                    <dd><a href="javascript:;">等比例列表排列</a></dd>
+                                    <dd><a href="javascript:;">按移动端排列</a></dd>
+                                </dl>
+                            </dd>
+                            <dd><a href="javascript:;">按钮</a></dd>
+                            <dd><a href="javascript:;">表单</a></dd>
+                            <dd><a href="javascript:;">导航</a></dd>
+                            <dd><a href="javascript:;">选项卡</a></dd>
+                            <dd><a href="javascript:;">进度条</a></dd>
+                            <dd><a href="javascript:;">面板</a></dd>
+                            <dd><a href="javascript:;">徽章</a></dd>
+                            <dd><a href="javascript:;">时间线</a></dd>
+                            <dd><a href="javascript:;">动画</a></dd>
+                            <dd><a href="javascript:;">辅助</a></dd>
+                            <dd><a href="javascript:;">通用弹层</a></dd>
+                            <dd><a href="javascript:;">日期时间</a></dd>
+                            <dd><a href="javascript:;">表格</a></dd>
+                            <dd><a href="javascript:;">分页</a></dd>
+                            <dd><a href="javascript:;">上传</a></dd>
+                            <dd><a href="javascript:;">颜色选择器</a></dd>
+                            <dd><a href="javascript:;">滑块组件</a></dd>
+                            <dd><a href="javascript:;">评分</a></dd>
+                            <dd><a href="javascript:;">轮播</a></dd>
+                            <dd><a href="javascript:;">流加载</a></dd>
+                            <dd><a href="javascript:;">工具</a></dd>
+                            <dd><a href="javascript:;">代码修饰</a></dd>
+                            <dd><a href="javascript:;">即时聊天</a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-template"></i><span
+                                class="i_txt">页面</span><span class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd><a href="javascript:;">个人主页</a></dd>
+                            <dd><a href="javascript:;">通讯录</a></dd>
+                            <dd><a href="javascript:;">客户列表</a></dd>
+                            <dd><a href="javascript:;">商品列表</a></dd>
+                            <dd><a href="javascript:;">留言板</a></dd>
+                            <dd><a href="javascript:;">搜索结果</a></dd>
+                            <dd><a href="javascript:;">注册</a></dd>
+                            <dd><a href="javascript:;">登入</a></dd>
+                            <dd><a href="javascript:;">忘记密码</a></dd>
+                            <dd><a href="javascript:;">404</a></dd>
+                            <dd><a href="javascript:;">错误提示</a></dd>
+                            <dd><a href="javascript:;">内嵌页面</a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-app"></i><span
+                                class="i_txt">应用</span><span
+                                class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd><a href="javascript:;">内容系统<span class="layui_nav_more"></span></a></dd>
+                            <dd><a href="javascript:;">社区系统<span class="layui_nav_more"></span></a></dd>
+                            <dd><a href="javascript:;">消息中心</a></dd>
+                            <dd><a href="javascript:;">工单系统</a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-senior"></i><span
+                                class="i_txt">高级</span><span class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd><a href="javascript:;">通讯系统</a></dd>
+                            <dd><a href="javascript:;">Echarts集成<span class="layui_nav_more"></span></a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-user"></i><span
+                                class="i_txt">用户</span><span
+                                class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd><a href="javascript:;">网站用户</a></dd>
+                            <dd><a href="javascript:;">后台管理员</a></dd>
+                            <dd><a href="javascript:;">角色管理</a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-set"></i><span
+                                class="i_txt">设置</span><span
+                                class="layui_nav_more"></span></a>
+                        <dl class="layui_nav_child">
+                            <dd><a href="javascript:;">网站设置</a></dd>
+                            <dd><a href="javascript:;">邮件服务</a></dd>
+                        </dl>
+                    </li>
+                    <li class="drop_down">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-auz"></i><span
+                                class="i_txt">授权</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--主体内容-->
+    <div class="main_body">
+        <div class="main_item">
+            <div class="main_part"></div>
+        </div>
+    </div>
+    <!--版本信息-->
+    <div class="cover_shadow"></div>
+    <div class="theme">
+        <h1>配色方案</h1>
+        <div class="themepart">
+            <ul id="changelist" class="clear">
+                <li class="themeacitve">
+                    <div class="small_slide small_slide1">
+                        <div class="small_header_top small_header_top1"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide2">
+                        <div class="small_header_top small_header_top2"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide3">
+                        <div class="small_header_top small_header_top3"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide4">
+                        <div class="small_header_top small_header_top4"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide5">
+                        <div class="small_header_top small_header_top5"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide6">
+                        <div class="small_header_top small_header_top6"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide7">
+                        <div class="small_header_top small_header_top7"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide8">
+                        <div class="small_header_top small_header_top8"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide9">
+                        <div class="small_header_top small_header_top9"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar1"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide10">
+                        <div class="small_header_top small_header_top10"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar10"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide11">
+                        <div class="small_header_top small_header_top11"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar11"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide12">
+                        <div class="small_header_top small_header_top12"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar12"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide13">
+                        <div class="small_header_top small_header_top13"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar13"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide14">
+                        <div class="small_header_top small_header_top14"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar14"></div>
+                </li>
+                <li>
+                    <div class="small_slide small_slide15">
+                        <div class="small_header_top small_header_top15"></div>
+                    </div>
+                    <div class="small_top_bar small_top_bar15"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer_page_massage">
+        <h1>版本信息</h1>
+        <div class="current_version">
+            <p>当前版本：layuiAdmin-v1.2.1 pro</p>
+            <p>基于框架：layui-v2.4.5</p>
+            <a class="get" href="javascript:;">获取授权</a><a class="download" href="javascript:;">下载新版</a>
+        </div>
+        <h1>关于版权</h1>
+        <div class="version_part">
+            <div class="version_content">
+                <p>layuiAdmin 受国家计算机软件著作权保护（登记号：<a href="">2018SR410669</a>），必须经<a href="">官网</a>授权才可获得源文件使用权。不得恶意分享产品源代码、二次转售等，违者将承担相应的法律责任。
+                    <br>
+                    <br>
+                    <span>详见：<a href="">《layui 付费产品服务条款》</a></span></p>
+            </div>
+            <div class="copyright">
+                <p>&copy 2018 <a href="">layui.com</a> 版权所有</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
